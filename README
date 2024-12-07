@@ -1,0 +1,10 @@
+SwayScripts - a collection of Perl scripts for controlling sway/i3.
+
+Installation:
+	perl Makefile.PL
+	make
+	make test
+	make install
+
+Dependencies:
+	AnyEvent::I3

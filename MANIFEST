@@ -1,0 +1,8 @@
+bin/sway-new-workspace.pl
+bin/sway-run-or-raise.pl
+bin/sway-title-status.pl
+Changes
+Makefile.PL
+MANIFEST			This list of files
+README
+t/00-load.t
