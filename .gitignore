@@ -4,6 +4,10 @@ Makefile
 Makefile.old
 pm_to_blib
 
+# Local metadata files
+MYMETA.json
+MYMETA.yml
+
 # Distribution tarballs
 *.tar.gz
 
