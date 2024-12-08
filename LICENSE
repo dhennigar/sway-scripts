@@ -7,10 +7,10 @@ You may choose to use the software under the terms of either:
   b) The GNU General Public License (GPL), 
      version 3 or any later version.
 
-Full copies of these licenses are available in the 
-`LICENSES` directory:
+Full copies of these licenses are available online:
 
-  - LICENSES/LICENSE.Artistic
-  - LICENSES/LICENSE.GPL
+  - Artistic License 2.0: https://dev.perl.org/licenses/artistic.html
+  - GNU GPL v3: https://www.gnu.org/licenses/gpl-3.0.html
 
-For more information, see the included license texts.
+By contributing to this project, you agree that your contributions
+will be licensed under these same terms.
