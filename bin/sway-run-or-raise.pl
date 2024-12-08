@@ -1,6 +1,8 @@
 #!/usr/bin/perl
-use strict;
-use warnings;
+
+# sway-run-or-raise.pl --- focus a program if it is open; else, launch it.
+
+use 5.032;
 
 # Check arguments
 if (@ARGV < 2) {

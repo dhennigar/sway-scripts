@@ -1,9 +1,20 @@
 #!/usr/bin/perl
 
+# sway-new-workspace.pl --- open the next available empty workspace
+
+# Copyright (c) 2024 Daniel Hennigar
+
+# This program is free software; you can redistribute it and/or modify it
+# under the terms of either:
+# 
+# a) the GNU General Public License as published by the Free Software
+#    Foundation; either version 1, or (at your option) any later version, or
+#
+# b) the "Artistic License".
+#
+# See https://dev.perl.org/licenses/ for more information.
+
 use 5.032;
-use strict;
-use warnings;
-use diagnostics;
 use Getopt::Std;
 use AnyEvent::I3;
 
@@ -31,4 +42,3 @@ if (defined $lowest_empty_workspace) {
     }
     i3->command("workspace " . $lowest_empty_workspace);
 }
-
