@@ -1,13 +1,14 @@
 Copyright (c) 2024 Daniel Hennigar
 
-This software is dual-licensed under the following terms:
+This project is licensed under a dual-license structure. You may
+choose to use the software under the terms of either:
 
-1. GNU GENERAL PUBLIC LICENSE Version 3 (GPL-3.0)
-   You may redistribute and/or modify this software under the terms of the GPL v3 as published by the Free Software Foundation. A copy of the GPL v3 is available at:
-   https://www.gnu.org/licenses/gpl-3.0.html
+  a) The Artistic License 2.0, or
+  b) The GNU General Public License (GPL), version 3 or any later version.
 
-2. ARTISTIC LICENSE Version 2.0
-   You may redistribute and/or modify this software under the terms of the Artistic License 2.0, which is available at:
-   https://opensource.org/licenses/Artistic-2.0
+Full copies of these licenses are available in the `LICENSES` directory:
 
-As a user of this software, you may choose to apply the terms of either of these licenses to your use of the software.
+  - LICENSES/LICENES.Artistic
+  - LICENSES/LICENSE.GPL
+
+For more information, see the included license texts.
