@@ -2,6 +2,12 @@
 
 # sway-run-or-raise.pl --- focus a program if it is open; else, launch it.
 
+# Copyright (c) 2024 Daniel Hennigar
+
+# This program is dual-licensed under the GNU General Public License, version 3, or
+# the Artistic License, version 2.0. You may choose to use, modify, and redistribute
+# it under either of these licenses.
+
 use 5.032;
 
 # Check arguments

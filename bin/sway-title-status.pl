@@ -4,15 +4,9 @@
 
 # Copyright (c) 2024 Daniel Hennigar
 
-# This program is free software; you can redistribute it and/or modify it
-# under the terms of either:
-# 
-# a) the GNU General Public License as published by the Free Software
-#    Foundation; either version 1, or (at your option) any later version, or
-#
-# b) the "Artistic License".
-#
-# See https://dev.perl.org/licenses/ for more information.
+# This program is dual-licensed under the GNU General Public License, version 3, or
+# the Artistic License, version 2.0. You may choose to use, modify, and redistribute
+# it under either of these licenses.
 
 use 5.032;
 use AnyEvent;
