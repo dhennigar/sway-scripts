@@ -1,6 +1,6 @@
 package SwayScripts::Utils;
 
-# Utils.pm --- a set of helper functions for SwayScripts
+# Utils.pm --- a set of helper functions for SwayScripts::Utils
 
 # Copyright (C) 2024 Daniel Hennigar
 
