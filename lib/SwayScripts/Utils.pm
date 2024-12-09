@@ -22,28 +22,23 @@ use Exporter 'import';
 our @EXPORT_OK = qw(find_current_ws_and_con find_named_child_cons);
 
 sub find_current_ws_and_con {
-  my ($node, $current_workspace) = @_;
+    my ($node, $current_workspace) = @_;
+    $current_workspace = $node if $node->{type} eq 'workspace';
 
-  $current_workspace = $node if $node->{type} eq 'workspace';
+    return ($current_workspace, $node) if $node->{focused};
 
-  if ($node->{focused}) {
-    return ($current_workspace, $node);
-  }
-
-  if ($node->{nodes} && ref $node->{nodes} eq 'ARRAY') {
-    foreach my $child (@{$node->{nodes}}) {
-      my ($ws, $con) = find_current_ws_and_con($child, $current_workspace);
-      return ($ws, $con) if $con;
+    for my $child (@{$node->{nodes} || []}) {
+        my ($ws, $con) = find_current_ws_and_con($child, $current_workspace);
+        return ($ws, $con) if $con;
     }
-  }
-  return undef;
 }
+
 
 sub find_named_child_cons {
     my ($node, $windows) = @_;
-    $windows ||= [];
+    $windows //= [];
     push @$windows, $node->{id} if $node->{name} && $node->{type} eq 'con';
-    if ($node->{nodes} && ref $node->{nodes} eq 'ARRAY') {
+    if ($node->{nodes}) { # && ref $node->{nodes} eq 'ARRAY') {
         foreach my $child (@{$node->{nodes}}) {
             find_named_child_cons($child, $windows);
         }
