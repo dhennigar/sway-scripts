@@ -1,7 +1,4 @@
 #!/usr/bin/env perl
-use 5.032;
-use AnyEvent::I3;
-use SwayScripts::Utils qw(find_current_ws_and_con find_named_child_cons);
 
 # sway-cycle-focus.pl --- emulate "Alt-Tab" behaviour in sway/i3
 
@@ -12,6 +9,10 @@ use SwayScripts::Utils qw(find_current_ws_and_con find_named_child_cons);
 # This program is dual-licensed under the GNU General Public License,
 # version 3, or the Artistic License, version 2.0. You may choose to
 # use, modify, and redistribute it under either of these licenses.
+
+use 5.032;
+use AnyEvent::I3;
+use SwayScripts::Utils qw(find_current_ws_and_con find_named_child_cons);
 
 my $tree = i3->get_tree->recv;
 my ($current_ws, $current_con) = find_current_ws_and_con($tree, undef);
