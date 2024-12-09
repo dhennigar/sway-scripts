@@ -18,10 +18,8 @@ my $tree = i3->get_tree->recv;
 my ($current_ws, $current_con) = find_current_ws_and_con($tree, undef);
 my $cons_in_workspace = find_named_child_cons($current_ws);
 
-for (my $i = 0; $i < @$cons_in_workspace; $i++) {
-  if (@$cons_in_workspace[$i] == $current_con->{id}) {
-    my $next_id = $cons_in_workspace->[($i + 1) % @$cons_in_workspace];
-    say "next id: $next_id";
-    i3->command("[con_id=$next_id] focus");
-  }
-}
+my $index = 0;
+$index++ while $cons_in_workspace->[$index] != $current_con->{id};
+my $next_id = $cons_in_workspace->[($index + 1) % @$cons_in_workspace];
+say "next id: $next_id";
+i3->command("[con_id=$next_id] focus");
