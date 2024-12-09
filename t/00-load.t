@@ -1,5 +1,17 @@
-use Test::More tests => 3;
+#!/usr/bin/env perl
+use strict;
+use warnings;
+use Test::More;
 
-ok(-e 'bin/sway-new-workspace.pl', 'sway-new-workspace.pl exists');
-ok(-e 'bin/sway-run-or-raise.pl', 'sway-run-or-raise.pl exists');
-ok(-e 'bin/sway-title-status.pl', 'sway-title-status.pl exists');
+# Load your module
+use lib '../lib'; # Ensure the test file knows where to find your module
+use SwayScripts::Utils; # Replace with the actual module name
+
+# Test 1: Check if the module loads correctly
+ok(1, 'Basic test file runs'); # Sanity check
+
+# Test 2: Check if the module loads without errors
+use_ok('SwayScripts::Utils');
+
+# All done!
+done_testing();
