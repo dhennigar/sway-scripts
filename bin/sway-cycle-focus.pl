@@ -6,9 +6,14 @@
 
 # Author: Daniel Hennigar
 
-# This program is dual-licensed under the GNU General Public License,
-# version 3, or the Artistic License, version 2.0. You may choose to
-# use, modify, and redistribute it under either of these licenses.
+# This program is free software; you can redistribute it and/or modify
+# it under the terms of either:
+
+#   a) the Artistic License 2.0, or
+#   b) the GNU General Public License as published by the Free Software
+#      Foundation; either version 3, or (at your option) any later version.
+
+# See the LICENSE file for more information.
 
 use 5.032;
 use AnyEvent::I3;
